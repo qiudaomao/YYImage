@@ -23,7 +23,6 @@
 		D9A9954B1F0564D40062698B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A995441F0564B70062698B /* Accelerate.framework */; };
 		D9A9954C1F0564D40062698B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A995431F0564B20062698B /* ImageIO.framework */; };
 		D9A9954D1F0564D40062698B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A995421F0564AF0062698B /* MobileCoreServices.framework */; };
-		D9A9954E1F0564D40062698B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A995411F0564A70062698B /* AssetsLibrary.framework */; };
 		D9A9954F1F0564D40062698B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A995401F05649B0062698B /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		D9A995331F05644A0062698B /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		D9A995341F05644A0062698B /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		D9A995401F05649B0062698B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		D9A995411F0564A70062698B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D9A995421F0564AF0062698B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D9A995431F0564B20062698B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D9A995441F0564B70062698B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -61,7 +59,6 @@
 				D9A9954B1F0564D40062698B /* Accelerate.framework in Frameworks */,
 				D9A9954C1F0564D40062698B /* ImageIO.framework in Frameworks */,
 				D9A9954D1F0564D40062698B /* MobileCoreServices.framework in Frameworks */,
-				D9A9954E1F0564D40062698B /* AssetsLibrary.framework in Frameworks */,
 				D9A9954F1F0564D40062698B /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +110,6 @@
 				D9A995441F0564B70062698B /* Accelerate.framework */,
 				D9A995431F0564B20062698B /* ImageIO.framework */,
 				D9A995421F0564AF0062698B /* MobileCoreServices.framework */,
-				D9A995411F0564A70062698B /* AssetsLibrary.framework */,
 				D9A995401F05649B0062698B /* libz.tbd */,
 				D9A995231F0564180062698B /* Info.plist */,
 			);
@@ -162,7 +158,7 @@
 		D9A995161F0564180062698B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = ibireme;
 				TargetAttributes = {
 					D9A9951E1F0564180062698B = {
@@ -176,6 +172,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D9A995151F0564180062698B;
 			productRefGroup = D9A995201F0564180062698B /* Products */;
@@ -227,12 +224,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -283,12 +284,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -333,8 +338,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
 		};
@@ -352,8 +358,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
